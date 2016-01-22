@@ -9,7 +9,7 @@ extern "C" {
 /*!
  * FreqPwrMeasureExample
  */
-double __cdecl FreqPwrMeasureExample(char VISAResourceName[], 
+double __stdcall FreqPwrMeasureExample(char VISAResourceName[], 
 	uint16_t PwrFreq, uint16_t PhyPort, double ReferenceLevel, double Freq);
 
 MgErr __cdecl LVDLLStatus(char *errStr, int errStrLen, void *module);
